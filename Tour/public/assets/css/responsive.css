@@ -1,0 +1,90 @@
+/* 1.Begin: Mobile */
+@media (max-width: 46.1875em) {
+    .s-col-full,
+    .s-full-width{
+        width: 100% !important;
+    }
+    .s-mt-8{
+        margin-top: 8px !important;
+    }
+    #nav{
+        display: block;
+    }
+    #nav > li{
+        display: block;
+    }
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    #nav li a{
+        padding: 1px 24px;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+    #nav .subnav a{
+        color: white;
+        padding: 5px 41px;
+    }
+    #header{
+        overflow: hidden;
+    }
+    #header .mobile-menu-btn{
+        display: block;
+    }
+    #header .search-btn{
+        display: none;
+    }
+    #content .member-item{
+        margin-top: 30px;
+        width: 100%;
+    }
+    #content .member-img{
+        width: 60%;
+    }
+    .contact-form{
+        margin-top: 32px;
+    }
+}
+/* End: Mobile */
+
+/* 2.Begin: Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    /* .contact-info{
+        line-height: 2;
+    } */
+}
+/* End: Tablet */
+
+/* 3.Begin: Tablet && Mobile */
+@media (max-width: 63.9375em){
+    .btn{
+        padding: 15px 16px;
+    }
+    #nav .subnav a{
+        padding: 5px 12px;
+    }
+    .contact-form .form-control{
+        padding: 15px;
+        font-size: 16px;
+    }
+    .contact-info{
+        line-height: 2;
+    }
+    .contact-submit-btn
+    {
+        font-size: 16px;
+    }
+    #footer .socials-list{
+        font-size: 36px;
+    }
+    #footer .socials-list a{
+        margin: 0 8px;
+    }
+    #footer .copyright a{
+        padding: 12px 0;
+        display: inline-block;
+    }
+}
+/* End: Mobile */

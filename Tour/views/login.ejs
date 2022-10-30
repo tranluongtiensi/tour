@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Login -->
+   <!-- <link rel="stylesheet" href="themify-icons/themify-icons.css"> -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- <link rel="stylesheet" href="css/reponsive.css"> -->
+
+</head>
+<body>
+
+<!-- <?php
+if(isset($message)){
+   foreach($message as $message){
+      echo '
+      <div class="message">
+         <span>'.$message.'</span>
+         <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+      </div>
+      ';
+   }
+}
+?> -->
+   
+<div class="form-container">
+
+   <form id="form" onsubmit="return false;">
+      <h3>login now</h3>
+      <input id="email"type="text" name="email" placeholder="Email" required class="box">
+      <input id="password" type="password" name="password" placeholder="Password" required class="box">
+      <input type="submit" name="submit" value="Login now" class="btn">
+      <p>Don't have an account? <a href="/register">Register now</a></p>
+   </form>
+
+</div>
+
+</body>
+<script src = "js/login.js"></script>
+</html>

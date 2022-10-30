@@ -1,0 +1,555 @@
+/* Begin CSS: general */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+:root{
+    --purple:#8e44ad;
+    --red:#c0392b;
+    --orange:#f39c12;
+    --black:#333;
+    --white:#fff;
+    --light-color:#666;
+    --light-white:#ccc;
+    --light-bg:#f5f5f5;
+    --border:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+ }
+*{
+    font-family: 'Rubik', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition:all .2s linear;
+ }
+ *::selection{
+    background-color: var(--purple);
+    color:var(--white);
+ }
+ html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+ }
+ .title{
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color:var(--black);
+    font-size: 4rem;
+ }
+.text-white{
+    color: #fff !important;
+}
+.text-center{
+    text-align: center;
+}
+.pull-right{
+    float: right !important;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+.col-third{
+    width: 33.33333%;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+.mt-32{
+    margin-top: 32px !important;
+}
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.btn:hover{
+    color: #000;
+    background-color: #ccc;
+}
+/* End CSS: general */
+
+/* Begin CSS: main */
+.form-container{
+    min-height: 100vh;
+    background-color: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:2rem;
+ }
+ 
+ .form-container form{
+    padding:2rem;
+    width: 50rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    background-color: var(--white);
+    text-align: center;
+ }
+ 
+ .form-container form h3{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color:var(--black);
+ }
+ 
+ .form-container form .box{
+    width: 100%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding:1.2rem 1.4rem;
+    font-size: 1.8rem;
+    color:var(--black);
+    border:var(--border);
+    margin:1rem 0;
+ }
+ 
+ .form-container form p{
+    padding-top: 1.5rem;
+    font-size: 2rem;
+    color:var(--black);
+ }
+ 
+ .form-container form p a{
+    color:var(--purple);
+ }
+ 
+ .form-container form p a:hover{
+    text-decoration: underline;
+ }
+/* End CSS: main */
+
+/* 1.Begin CSS: header */
+header{
+    background-color: #000;
+ }
+ 
+.header .header-1 .flex{
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 auto;
+}
+ 
+.header .header-2{
+    background-color: #000;
+    box-shadow: var(--box-shadow);
+}
+ 
+.header .header-2.active{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+}
+ 
+.header .header-2 .flex{
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin:0 auto;
+    position: relative;
+}
+ 
+.header .header-1 .flex .share a{
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+    color: #fff;
+}
+ 
+.header .header-1 .flex p{
+    font-size: 2rem;
+    color: #fff;
+}
+ 
+.header .header-1 .flex p a{
+    color:var(--purple);
+}
+ 
+.header .header-1 .flex p a:hover{
+    text-decoration: underline;
+}
+ 
+.header .header-2 .flex .logo{
+    font-size: 2.5rem;
+    color: #fff;
+}
+ 
+.header .header-2 .flex .navbar a{
+    margin:0 1rem;
+    font-size: 2rem;
+    color: #fff;
+}
+ 
+.header .header-2 .flex .navbar a:hover{
+    color: #ccc;
+    text-decoration: none;
+}
+ 
+.header .header-2 .flex .icons > *{
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+ 
+.header .header-2 .flex .icons > *:hover{
+    color:var(--purple);
+}
+.header .search-btn{
+    float:right;
+    padding: 0 21px;
+    color: #fff;
+}
+.header .search-icon{
+    color: #fff;
+    font-size: 23px;
+    line-height: 46px;
+}
+.header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+.header .header-2 .flex .navbar a:hover{
+    text-decoration: underline;
+}
+/* End CSS: header */
+
+/* 2.Begin CSS: Slider */
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../image/map/map1.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content{
+    position:absolute;
+    bottom: 47px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+    text-shadow: 1px 1px 1px #000;
+}
+#slider .text-decription{
+    font-size: 15px;
+    margin-top: 25px;
+    text-shadow: 1px 1px 1px #000;
+}
+/* End CSS: Slider */
+
+/* 3.Begin CSS: Content */
+.clear{
+    clear: both;
+}
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 0 112px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: 20px;
+}
+#content .section-heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+#content .about-text{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.6;
+}
+#content .members-list{
+    margin-top: 32px;
+}
+#content .member-item{
+    text-align: center;
+}
+#content .member-name{
+    font-size: 15px;
+}
+#content .member-img{
+    width: 254px;
+    margin-top: 15px;
+    border-radius: 4px;
+    border: 1px solid #000;
+}
+.tour-section{
+    background-color: #000;
+}
+.tickets-list{
+    background-color: #fff;
+    list-style: none;
+    margin-top: 40px;
+}
+.tickets-list li{
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.tickets-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+.tickets-list .quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+.places-list{
+    margin-top: 16px;
+}
+.place-img{
+    width: 100%;
+    /* border: 1px solid #fff; */
+    /* display: block; */
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-body{
+    padding: 16px;
+    font-size: 15px;
+    background-color: #fff;
+    color: #000;
+}
+.place-heading{
+    font-size: 15px;
+    font-weight: 600;
+}
+.place-time{
+    margin-top: 15px;
+    color: #757575;
+}
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.6;
+    text-align: justify;
+    flex: 1;
+    overflow: hidden; 
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+.contact-content{
+    margin-top: 48px;
+    width: auto;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.contact-info a{
+    color: #000;
+    opacity: 0.7;
+}
+.contact-info a:hover{
+    opacity: 1;
+}
+.contact-form{
+    font-size: 15px;
+}
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.map-section img{
+    width: 100%;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+}
+/* End CSS: Content */
+
+/* 4.Begin CSS: Footer */
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+    border: none;
+}
+#footer .socials-list{
+    font-size: 24px;
+}
+.copyright a,
+#footer .socials-list a{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+.copyright a:hover,
+#footer .socials-list a:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+#footer .copyright{
+    margin-top: 15px;
+}
+/* End CSS: Footer */
+
+/* 5.Begin CSS: Modal */
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal.open{
+    display: flex;
+}
+.modal-container{
+    background: #fff;
+    width: 900px;
+    min-height: 200px;
+    max-width: calc(100% - 32px);
+    position: relative;
+    color: #000;
+    animation: modalFadeIn ease 0.6s;
+}
+.modal-header{
+    background: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+.modal-heading-icon{
+    margin-right: 16px;
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: black;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.modal-close:hover{
+    color: #fff;
+    background-color: red;
+}
+.modal-body{
+    padding: 16px;
+}
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+#buy_tickets{
+    background: #009688;
+    color: #000;
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+#buy_tickets:hover{
+    color: #000;
+    background-color: red;
+}
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+    background-color: #009688;
+    color: #000;
+}
+.modal-footer .modal-help a{
+    text-decoration: none;
+    border: none;
+    color: #fff;
+}
+.modal-footer .modal-help a:hover{
+    color: #000;
+    background-color: blue;
+}
+/* End CSS: Modal */
+
+/* Begin: JVScrip */
+@keyframes modalFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/* End: JVScrip */
